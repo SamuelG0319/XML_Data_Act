@@ -1,0 +1,23 @@
+.table{
+    display: flex;
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+#titulo{
+    font-size: 40px;
+}
+.subtitle{
+    font-size: 30px;
+}
+tr{
+    border: solid black 2px;
+}
+#tabla_body{
+    font-size: 25px;
+}

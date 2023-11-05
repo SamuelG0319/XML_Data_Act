@@ -1,55 +1,3 @@
-<?php
-class XMLCreator
-{
-    public function createXml()
-    {
-        $doc = new DOMDocument('1.0', 'utf-8');
-        $doc->preserveWhiteSpace = false;
-        $doc->formatOutput = true;
-
-        $noticias = $doc->createElement('noticias');
-        $doc->appendChild($noticias);
-
-        $noticia = $doc->createElement('noticia');
-        $noticias->appendChild($noticia);
-
-        $titulo = $doc->createElement('titulo', 'Guerra entre Israel y Gaza, en directo | Hamás afirma que más de 60 rehenes israelíes están desaparecidos tras los últimos ataques aéreos de Israel');
-        $noticia->appendChild($titulo);
-
-        $textoNoticia = $doc->createElement('textoNoticia', 'Miles de personas se manifiestan en Londres, París, Berlín y Washington para pedir un alto el fuego en Gaza | Israel golpea de nuevo el norte de la Franja, donde todavía quedan unas 400.000 personas');
-        $noticia->appendChild($textoNoticia);
-
-        $noticia = $doc->createElement('noticia');
-        $noticias->appendChild($noticia);
-
-        $titulo = $doc->createElement('titulo', 'Educadores acuerdan seguir con las acciones de protesta en las calles');
-        $noticia->appendChild($titulo);
-
-        $textoNoticia = $doc->createElement('textoNoticia', 'Miembros de la Asociación de Profesores de Panamá (Asoprof) y de la agrupación Panamá Sin Minería, reunidos este sábado 4 de noviembre, acordaron continuar con las acciones de protestas para lograr la 
-        derogatoria de la Ley 406, que ratificó el contrato suscrito entre el Estado y Minera Panamá. Durante la reunión, los dirigentes señalaron que es necesario que el Gobierno de Laurentino Cortizo derogue definitivamente la Ley 406.');
-        
-        $noticia->appendChild($textoNoticia);
-
-        $noticia = $doc->createElement('noticia');
-        $noticias->appendChild($noticia);
-
-        $titulo = $doc->createElement('titulo', 'Más de 900 personas aprehendidas en 13 días de manifestaciones');
-        $noticia->appendChild($titulo);
-
-        $textoNoticia = $doc->createElement('textoNoticia', 'Unas 948 personas han sido aprehendidas en el país en 13 días de protestas efectuadas contra la aprobación de la Ley 406 de 2023 referente al contrato minero entre el Estado y Minera Panamá.
-        Así lo dio a conocer este sábado 4 de noviembre de 2023 la Policía Nacional en un reporte donde detalló que, del total de detenidos, 819 son adultos y 129 a menores de edad.
-        Por el momento se ha logrado judicializar a estas personas ante el Ministerio Público y en los despachos de los jueces de paz, tras los sucesos cometidos en las provincias de Panamá, Panamá Oeste, Veraguas, Chiriquí y Colón, se detalló.
-        Según el informe, en estos días de protestas han resultado afectados 62 comercios y 51 instituciones gubernamentales, entre ellas oficinas y 28 cámaras de videovigilancia que resultaron vandalizadas.');
-        $noticia->appendChild($textoNoticia);
-
-        $doc->save('archivo.xml');
-    }
-}
-
-$creator = new XMLCreator();
-$creator->createXml();
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -97,7 +45,7 @@ $creator->createXml();
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-5 me-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="creadorXML.php">CreadorXML</a>
+                            <a class="nav-link click-scroll" href="index.php">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -118,9 +66,9 @@ $creator->createXml();
                 <div class="row">
 
                     <div class="col-lg-8 col-12 mx-auto">
-                        <h1 class="text-white text-center">Noticias - Parte II</h1>
+                        <h1 class="text-white text-center">Tabla - Parte I</h1>
 
-                        <h6 class="text-center">Actividad 6 - Noticias desde un XML</h6>
+                        <h6 class="text-center">Actividad 6 - Mostrar Tabla con Ciudades/Países/Continentes</h6>
 
                     </div>
 
@@ -140,11 +88,11 @@ $creator->createXml();
 
                                 <div class="custom-block-overlay-text d-flex">
                                     <div>
-                                        <h5 class="text-white mb-2">Accede a las noticias</h5>
+                                        <h5 class="text-white mb-2">Accede a las ciudades</h5>
 
-                                        <p class="text-white">El archivo XML que contiene las diversas noticias ya fue creado. Ahora tienes acceso libre para ver dichas noticias.</p>
+                                        <p class="text-white">Se creo una tabla con 2 columnas y una de ellos con atributos, la tercera columna de esta tabla obtiene los valores de los atributos establecidos a la columna País.</p>
 
-                                        <a href="noticias.php" class="btn custom-btn mt-2 mt-lg-3">Ver Noticias</a>
+                                        <a href="ciudades.php" class="btn custom-btn mt-2 mt-lg-3">Ver Tabla</a>
                                     </div>
                                 </div>
                                 <div class="section-overlay"></div>

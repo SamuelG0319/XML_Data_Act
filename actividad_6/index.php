@@ -49,7 +49,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Ciudades</a>
+                            <a class="nav-link click-scroll" href="pre_city.php.php">Ciudades</a>
                         </li>
 
                         <li class="nav-item">
@@ -94,7 +94,7 @@
 
                                         <p class="text-white">Creación de un documento XML bien formado y válido, con ciudades, países y sus respectivos continentes.</p>
 
-                                        <a href="ciudades.php" class="btn custom-btn mt-2 mt-lg-3">Ver Ciudades</a>
+                                        <a href="pre_city.php" class="btn custom-btn mt-2 mt-lg-3">Ver Ciudades</a>
                                     </div>
                                 </div>
                                 <div class="section-overlay"></div>

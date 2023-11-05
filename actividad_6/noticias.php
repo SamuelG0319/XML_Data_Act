@@ -59,7 +59,7 @@ if (!file_exists('archivo.xml')) {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Ciudades</a>
+                            <a class="nav-link click-scroll" href="pre_city.php">Ciudades</a>
                         </li>
 
                         <li class="nav-item">
